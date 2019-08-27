@@ -1,15 +1,104 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Sitting</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+<head>
+  <title>Sitting</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-  <body>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+
+<body>
+  <%# <div id="flex-content-container"> %>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Ryan's Petsitting</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+          <li class="nav-item">
+            <% if current_client %>
+            <%= link_to 'Sign out', destroy_client_session_path, class: 'nav-link', method: :delete %>
+          </li>
+          <li class="nav-item">
+            <% else %>
+            <%= link_to 'Sign up', new_client_registration_path, class: 'nav-link' %>
+          </li>
+          <li class="nav-item">
+            <%= link_to 'Sign in', new_client_session_path, class: 'nav-link' %>
+            <% end %>
+          </li>
+          <li class="nav-item">
+            <%= link_to 'References', posts_path, class: 'nav-link' %>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <%= image_tag 'smokey.jpg', class: 'd-block img-fluid' %>
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Smokey - Barn cat on my Grandparents' farm</h3>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag 'dog2.jpg', class: 'd-block img-fluid' %>
+          <div class="carousel-caption d-none d-md-block">
+            <h3>This is a dog...</h3>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <%= render "layouts/alerts" %>
     <%= yield %>
-  </body>
+  <%# </div> %>
+
+  <div id="footer">
+    <div class="container">
+      <div class="col-12 col-sm-3">
+        <b>Contact:</b>
+        <br />
+        Ryan Heckman
+        <br />
+        ryanspetsitting@gmail.com
+        <br />
+        Oro Valley, AZ, 85704
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-3">
+      <b>Social</b>
+      <br />
+      <br />
+      <%= link_to 'http://facebook.com/ryanspetsittingtucson' do %>
+      <span class="fa fa-facebook-square fa-2x social-button"></span>
+      <% end %>
+      <%= link_to 'http://twitter.com' do %>
+      <span class="fa fa-twitter-square fa-2x social-button"></span>
+      <% end %>
+    </div>
+  </div>
+  </div>
+</body>
+
 </html>

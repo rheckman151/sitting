@@ -1,0 +1,10 @@
+<div class="booyah-box col-10 offset-1">
+  <h1>What is your pet's name?</h1>
+  <%= simple_form_for @place do |f| %>
+    <%= f.input :name %>
+    <%= f.input :age %>
+    <%= f.input :medication %>
+    <br />
+    <%= f.submit 'Create', class: 'btn btn-primary' %>
+  <% end %>
+</div>

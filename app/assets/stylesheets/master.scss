@@ -1,0 +1,191 @@
+@import "bootstrap";
+
+body{
+  font-family: 'Titillium Web', sans-serif;
+  margin: 0;
+  // background: image_url('../images/mamba.jpg') repeat center center fixed;
+  background: blue;
+}
+
+.navbar {
+    // background: image_url('prism.png');
+    box-shadow: 0px 1px 3px #2a2a2a;
+    // margin-bottom: 0;
+  }
+  
+  .navbar-dark .navbar-brand {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 600;
+  }
+
+.carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
+    max-height: 550px;
+    width: 100%;
+}
+
+.carousel-item.active, 
+.carousel-item-next, 
+.carousel-item-prev {
+  display: block;
+}
+
+.carousel-caption {
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 60px;
+    font-weight: 100;
+    text-shadow: rgba(0, 0, 0, 0.95) 2px 2px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    position: absolute;
+    left: 0;
+  }
+
+  .carousel {
+    box-shadow: 0px 3px 8px #2a2a2a;
+  }
+  
+  p{
+    text-align: center;
+    color: white;
+  }
+  
+  h1{
+    font-size: 60px;
+    font-weight: normal;
+    color: white;
+    margin-bottom: 0;
+  }
+  
+  h2{
+    font-size: 22px;
+    color: white;
+    margin-top: 0;
+  }
+  
+  h3{
+    text-align: center;
+    font-size: 28px;
+    font-weight: normal;
+    margin-top: 100px;
+    color: white;
+  }
+  
+  h4{
+    text-align: center;
+    font-size: 24px;
+    color: white;
+  }
+  
+  .bio{
+    font-size: 16px;
+    color: white;	
+  }
+  
+  .me{
+    height: 150px;
+    border-radius: 100%;
+    border-style: solid;
+    border-color: white;
+    margin-top: 40px;
+  }
+  
+  .about{
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  
+  .about-container {
+    background: url('../images/cat2.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 600px;
+  }
+  
+  .about-container ul li :hover{
+    color: red;
+  
+  }
+  
+  .grey{
+    background-color: #919191;
+    height: 3px;
+    border: none;
+    width: 50px;
+  }
+  
+  .blue{
+    border-top: 5px double #002699;
+    width: 250px;
+    border-bottom: none;
+    border-right: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .box {
+    float: left;
+    width: 42.5%;
+    margin-left: 5%;
+    margin-top: 80px;
+  }
+  
+  .clear {
+    clear: both;
+  }
+  
+  .full-width{
+    width: 100%;
+  }
+  
+  .skills-and-tools{
+    max-width: 400px;
+    margin: 40px auto;
+  }
+  
+  .icons{
+    text-align: center;
+  }
+  
+  .icon{
+    margin: 30p 0;
+  }
+  
+  .contact-me{
+    height: 350px;
+    background-color: #202020;
+    padding-top: 30px;
+  }
+  
+  .contact-info{
+    color: white;
+    font-size: 13px;
+    margin-top: 30px;
+  }
+  
+  .contact-link{
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+  }
+  
+  .nav-link{
+    color: white;
+    text-decoration: none;
+  }
+  
+  li{
+    display: inline-block;
+    font-size: 12px;
+    width: 100px;
+    font-weight: bold;
+    margin-top: 30px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    margin-left: 30px;
+    color: white;
+  }
