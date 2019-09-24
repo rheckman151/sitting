@@ -1,6 +1,10 @@
 class ClientsController < ApplicationController
+    def home
+        @client = Client.new
+    end
+
     def show
-        <h1>User Dashboard</h1>
+        @client = Client.find(params[:id])
     end
 
 end

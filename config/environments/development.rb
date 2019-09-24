@@ -1,4 +1,15 @@
 Rails.application.configure do
+  config.action_mailer.delivery_method = :smtp
+
+  # config.action_mailer.smtp_settings = {
+  #   address: "smtp.gmail.com",
+  #   port: 587,
+  #   domain: "example.com",
+  #   authentication: "plain",
+  #   enable_starttls_auto: true,
+  #   user_name: ENV['GMAIL_ADDRESS'],
+  #   password: ENV['GMAIL_PASSWORD']
+  # }
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on
@@ -11,7 +22,7 @@ Rails.application.configure do
 
   # Show full error reports.
   config.consider_all_requests_local = true
-
+  config.action_mailer.delivery_method = :test
   # Enable/disable caching. By default caching is disabled.
   # Run rails dev:cache to toggle caching.
   if Rails.root.join('tmp', 'caching-dev.txt').exist?

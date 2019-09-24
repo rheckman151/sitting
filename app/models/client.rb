@@ -9,6 +9,8 @@ class Client < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
   has_many :appointments
+  has_many :pets
+  has_many :posts
 
   def username
        return self.email.split('@')[0].capitalize

@@ -3,14 +3,13 @@
 body{
   font-family: 'Titillium Web', sans-serif;
   margin: 0;
-  // background: image_url('../images/mamba.jpg') repeat center center fixed;
-  background: blue;
+  background-color: grey;
 }
 
 .navbar {
-    // background: image_url('prism.png');
+    background: image_url('prism.png');
     box-shadow: 0px 1px 3px #2a2a2a;
-    // margin-bottom: 0;
+    margin-bottom: 0;
   }
   
   .navbar-dark .navbar-brand {
@@ -38,6 +37,7 @@ body{
     width: 100%;
     position: absolute;
     left: 0;
+    
   }
 
   .carousel {
