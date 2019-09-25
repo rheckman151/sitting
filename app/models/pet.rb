@@ -2,6 +2,8 @@ class Pet < ApplicationRecord
   belongs_to :client
   has_many :types
   has_many :medications
+  has_many :genders
+  has_many :pays
 
 
   
