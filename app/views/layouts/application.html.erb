@@ -32,6 +32,9 @@
               <% end %>
           </li>
           <li class="nav-item">
+              <%= link_to 'About', about_path, class: 'nav-link' %>
+          </li>
+          <li class="nav-item">
               <%= link_to 'Book Me', '#', class: 'nav-link', data: {toggle: 'modal', target: '#myModal'} %>
           </li>
           <li class="nav-item">
@@ -143,42 +146,13 @@
         </div>
       </div>
     
-
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    </ol>
-    <div class="carousel-inner" role="listbox">
-      <div class="carousel-item active">
-        <%= image_tag 'smokey.jpg', class: 'd-block img-fluid' %>
-        <div class="carousel-caption d-none d-md-block">
-          <h3>Smokey - Barn cat on my Grandparents' farm</h3>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <%= image_tag 'dog2.jpg', class: 'd-block img-fluid' %>
-        <div class="carousel-caption d-none d-md-block">
-          <h3>This is a dog...</h3>
-        </div>
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
   <%= render "layouts/alerts" %>
   <%= yield %>
 
   <div id="footer">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-sm-3">
+        <div class="col-12 col-sm-6">
           <b>Contact:</b>
           <br />
           Ryan Heckman
@@ -188,7 +162,7 @@
           Oro Valley, AZ, 85704
         </div>
         
-        <div class="col-12 col-sm-3">
+        <div class="col-12 col-sm-6">
           <b>Social:</b>
           <br />
           <br />

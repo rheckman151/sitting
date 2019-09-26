@@ -3,7 +3,7 @@ class Pet < ApplicationRecord
   has_many :type
   has_many :medications
   has_many :gender
-  has_many :pay
+  # has_many :pay
 
 
   
@@ -12,7 +12,7 @@ class Pet < ApplicationRecord
   validates :age, presence: true
   validates :gender, presence: true
   validates :medication, presence: true
-  validates :pay, presence: true
+  # validates :pay, presence: true
 
   
 end
