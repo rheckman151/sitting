@@ -5,6 +5,7 @@
 
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
 </head>
 
 <body>
@@ -80,7 +81,7 @@
                 
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-dismiss="modal">View all references</button>
+                <button type="button" class="btn btn-danger">View all references</button>
                 <%= f.submit 'Create', class: 'btn btn-primary' %>
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
               </div>
@@ -111,12 +112,12 @@
                 <%# <%= f.input :pay, as: :radio_buttons %>
               </div>
 
-              <%# <% @pet.photos.each do |photo| %> 
+              <%# <% @client.photos.to_s.each do |photo| %> 
                   <%# <div class="column"> %>
-                    <%# <%= image_tag photo.picture.url unless photo.picture.blank? %> 
-                    <%# <%= photo.caption %> 
+                    <%# <%= image_tag photo.picture.url unless photo.picture.blank? %>
+                    <%# <%= photo.caption %>
                   <%# </div> %>
-              <%# <% end %> 
+              <%# <% end %>
 
           <%= form_tag charges_path do %>
           <article>

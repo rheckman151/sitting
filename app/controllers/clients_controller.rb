@@ -1,4 +1,6 @@
 class ClientsController < ApplicationController
+    
+    
     def home
         @client = Client.new
     end
